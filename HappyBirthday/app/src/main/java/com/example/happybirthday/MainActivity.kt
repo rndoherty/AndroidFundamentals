@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     fun sendLogMessage(view: View){
         Log.d("MainActivity", "You pressed me!")
+        Log.i("MainActivity", "Log set to 'i'")
     }
 
 }
