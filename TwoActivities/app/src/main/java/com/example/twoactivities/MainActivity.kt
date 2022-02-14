@@ -1,5 +1,6 @@
 package com.example.twoactivities
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     fun launchSecondActivity(view: View) {
         Log.d(LOG_TAG, "Button Clicked!")
-
+        val intent = Intent(this, SecondActivity::class.java)
+        startActivity(intent)
     }
 }
